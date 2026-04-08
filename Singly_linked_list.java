@@ -61,6 +61,13 @@ public class Main
 	    head=head.next;
 	}
 	public void deleteatend(){
+		if(head==null){
+			System.out.println("List is Empty");
+		}
+		if(head.next==null){
+			head=null;
+			return;
+		}
 	    Node temp=head;
 	    while(temp.next.next!=null){
 	        temp=temp.next;
